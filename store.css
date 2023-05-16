@@ -1,10 +1,8 @@
 body{
     background-color: rgb(171, 199, 177);
-   
+   text-decoration:;
 }
-
 .countainer{
-    width: 100%;
     display: grid;
     grid-template-areas: 
     "header header"
@@ -12,9 +10,7 @@ body{
     ; 
 }
 .header{
-    width: 100%;
     border-radius: 5px;
-    font-family: ;
     box-shadow: 0px 0px 5px 0px black inset;
     text-align: center;
     background-color: rgb(5, 192, 45);
@@ -23,22 +19,22 @@ body{
 
 }
 .products{
-    width: 100%;
-    height: 100%;
+    height: 1400px;
+    row-gap: 10px;
+    box-sizing: content-box;
     padding: 0px;
     margin-top: 20px;
-    box-shadow: 0px 0px 5px 0px  black;
+    box-shadow: 0px 0px 5px 0px inset black;
     border-radius: 5px;
     grid-area: 2/1/3/2;
     background-attachment: scroll;
     display: flex;
-    flex-wrap: wrap ;
-    
+    flex-wrap: wrap;
 }
 .liked{
-    width: 400px;
+    width: 309px;
     grid-area: 2/2/3/3;
-    box-shadow: 0px 0px 5px 0px ;
+    box-shadow: 0px 0px 5px 0px inset;
     margin-top: 20px;
     margin-right: 10px;
     border-radius: 5px;
@@ -46,26 +42,86 @@ body{
     float: right;
 }
 .search_product{
-    width: 100%;
+    margin: 5px;
+    width:300px;
     padding: 10px;
     border-radius: 5px;
     text-align: center;
+    
 }
-.number_of_basket{
+.number_of_product_liked{
+    text-align: center;
     background-color: red;
     color: rgb(255, 255, 255);
-    font-size: 32px;
     font-weight: bolder;
-    margin: 5px;
+    margin: 2px;
     padding: 10px;
     border-radius: 5px;
-    border: 1px solid black;
-    width: 92%;
+}
+.added_product{
+    background-color: rgb(5, 199, 209);
+    box-shadow: 0px 0px 15px 0px inset;
+    height: 70px;
+    margin: 2px;
+    border-radius: 5px;
+    display:flex;
+    margin-top: 30px;
+}
+
+.added_product img{
+    width: 50px;
+    height: 60px;
+    margin-left: 10px;
+    margin-top: 4px;
+    transition: all 1s;
+}
+.added_product img:hover{
+    transform: scale(2);
+}
+.added_product_price{
+    
+    color: rgb(10, 2, 238);
+    margin-top: 5px;
+    font-weight: bolder;
+    margin-left:15px ;
+}
+.added_product_quantity{
+    width: 50px;
+    height: 15px;
+    margin-top: 35px;
+    position: relative;
+    right: 35px;
+    transition: all 1s;
+    text-align: center;
+    border-radius: 5px;
+}
+.added_product_quantity:hover{
+    transform: scale(2);
+}
+.added_product p{
+    height: 5px;
+    margin-top: 8px;
+    position: relative;
+    right: 10px;
+    color: white;
+}
+.trasht{
+    font-size: 50px;
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 40px;
+    transition: all 0.8s;
+}
+.trasht:hover{
+    color: red;
+    transform: scale(0.7);
 }
 .product{
-    width: 200px;
+    position: relative;
+    top: 10px;
+    bottom: 10px;
+    width: 250px;
     height: 300px;
-    margin: 5px;
     margin: auto;
     grid-area: 2/1/3/2;
     box-shadow: 0px 0px 5px 0px  inset;
@@ -125,7 +181,6 @@ body{
     align-items: center;
     justify-content: center;
     margin: 5px;
-  
     text-align:center;
     grid-area: 1/1/2/3;/* du panier*/
 }
@@ -145,7 +200,14 @@ body{
     margin: 5px;
     border-radius: 5px ;
     grid-area: 2/1/3/3;/* du panier*/
+   
 
+}
+.product_photo img{
+     transition: all 1s;
+}
+.product_photo img:hover{
+    transform: scale(2);
 }
 .product_photo img{
    margin-left: 10%;
@@ -171,7 +233,7 @@ body{
 .add_this_to_basket{
     border: none;
     background: none;
-    margin-top: 40%;
+    margin-top: 55%;
     transition: all 0.5s ;
 }
 button:hover{
@@ -194,4 +256,5 @@ button:hover{
     border-radius: 5px;
     color: white;
 }
+
 
