@@ -7,11 +7,13 @@
     <title>store</title>
     <link rel="website icon" href="photos/our.png">
     <link rel="stylesheet" href="store.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.0.7/css/boxicons.min.css">
 </head>
 <body>
+   
     <div class="countainer">
 
-       <div class="header"><h1>Ma boutique en ligne</h1><h4>by ziyad</h4></div>
+       <div class="header"><h1>Ma boutique en ligne</h1><h4>by ziyad ouamna</h4></div>
 
         <div class="products">
             <!--===================PRODUCT 1===================-->
@@ -31,7 +33,7 @@
 
                     <div class="add_product_to_basket">
                         <input class="product_quantity" type="number" placeholder="0">
-                        <button class="add_this_to_basket"><img  src="photos/panier.png"  width="30px"></button>
+                        <button onclick="addproduct()" class="add_this_to_basket"><img  src="photos/panier.png"  width="30px"></button>
                     </div>
             </div>
             <!--===================PRODUCT 2===================-->
@@ -260,7 +262,14 @@
 
         <div class="liked">
             <input class="search_product" type="search" placeholder="search">
-            <p  class="number_of_basket" >Total du panier : </p>
+            <p  class="number_of_product_liked" >Total du panier : 0dh</p>
+            <div class="added_product">
+                        <img src="photos/our.png" height="70px" width="100px">
+                        <span class="added_product_price">35dh</span>
+                        <input class="added_product_quantity" type="number" placeholder="0">
+                        <p>joli nounours marron avec un foulard </p>
+                        <i class="trasht bx bxs-trash"></i>
+            </div>
         </div>
 
     </div>
